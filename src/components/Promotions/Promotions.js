@@ -5,7 +5,7 @@ import promotion_info from './promotions.json'
 export const Promotions = () => {
   return (
     <React.Fragment>
-        <SanaOzel props={promotion_info}/>
+        <SanaOzel cards={promotion_info}/>
     </React.Fragment>
   );
 };

@@ -2,3 +2,9 @@
     display: flex;
     flex: 1 1 auto;
 }
+
+.single_promotion_container{
+width: auto;
+border-radius: 10px;
+text-align: center;
+}
