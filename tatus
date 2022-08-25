@@ -1,0 +1,29 @@
+[33mcommit da764fad47f3f20932447bd4462de5cc77117eb8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: denizerus <denizerkeskiner@hotmail.com>
+Date:   Thu Aug 25 15:47:57 2022 +0300
+
+    super price component implemented
+
+[33mcommit 91f892ed8f54278b9c7ddcbba789daadce110bf3[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: denizerus <denizerkeskiner@hotmail.com>
+Date:   Tue Aug 23 16:46:10 2022 +0300
+
+    promotion slider implemented
+
+[33mcommit 7fe039e90df211767abaa04844e13858aa9e8cbe[m
+Author: denizerus <denizerkeskiner@hotmail.com>
+Date:   Mon Aug 22 14:39:26 2022 +0300
+
+    navbar & promotions implemented
+
+[33mcommit d185afd3aa96672ba60f6d1a832d62fab5b45b8e[m
+Author: denizerus <denizerkeskiner@hotmail.com>
+Date:   Fri Aug 19 15:59:01 2022 +0300
+
+    proje yüklemesi
+
+[33mcommit 44cd5f7a8b2653418ebe39d3a0fb72489e2300aa[m
+Author: denizerus <denizerkeskiner@hotmail.com>
+Date:   Fri Aug 19 15:41:40 2022 +0300
+
+    Initialize project using Create React App
