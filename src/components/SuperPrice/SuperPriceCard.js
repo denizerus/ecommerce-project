@@ -20,7 +20,7 @@ const SuperPriceCard = ({props}) => {
           <Button
             onMouseEnter={onHover}
             onMouseLeave={onLeave}
-            href="#"
+            href="/"
             className="btn-super-price btn btn-light stretched-link mt-3 mb-1 btn-lg"
           >
             {hover ? "Sepete Ekle" : props.super_price_new_price}
