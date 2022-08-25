@@ -2,3 +2,18 @@
     margin-top: 10px;
     text-align: left;
 }
+
+.btn-super-price {
+    background-color: "null" !important;
+    border: none;
+    font-weight: bold !important;
+    color: #ff6000 !important;
+}
+
+.btn-super-price:hover {
+    background-color: #ffece0 !important;
+    font-weight: bold;
+    color: #ff6000 !important;
+    border: none;
+}
+

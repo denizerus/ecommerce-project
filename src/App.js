@@ -8,13 +8,15 @@ import React from 'react';
 function App() {
   return (
     <React.Fragment>
-      <div className="App">
-        <Header />
-        <NavBarComponent />
-      </div>
-      <Promotions />
-      <div className="App">
-        <SuperPrice />
+      <div>
+        <div className="App">
+          <Header />
+          <NavBarComponent />
+        </div>
+        <Promotions />
+        <div className="App">
+          <SuperPrice />
+        </div>
       </div>
     </React.Fragment>
   );
