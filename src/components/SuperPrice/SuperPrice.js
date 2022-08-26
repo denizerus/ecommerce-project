@@ -8,7 +8,6 @@ const SuperPrice = () => {
   return (
     <div className="super_price_container">
       <h1>Süper Fiyat, Süper Teklif</h1>
-
       <div className="container mt-4">
         <div className="row">
           <Carousel cols={4} rows={1} gap={10} loop>

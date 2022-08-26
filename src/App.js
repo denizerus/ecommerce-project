@@ -1,5 +1,4 @@
 import './App.css';
-import NavBarComponent from './components/NavBarComponent/NavBarComponent';
 import Header from './components/Header/Header';
 import React from 'react';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
