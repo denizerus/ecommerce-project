@@ -13,10 +13,10 @@ const SinglePromotion = ({props}) => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="container mt-3">
+        <div className="container" style={{background:"transparent"}}>
           <div className="row">
             <div className="col">
-              <div className="card mt-3 mb-3 border border-radius">
+              <div className="card mt-3 mb-3 border border-radius" style={{marginLeft: "10%", marginRight: "10%"}}>
                 <div className="row no-gutters">
                   <div className="col">
                     <img
@@ -25,7 +25,7 @@ const SinglePromotion = ({props}) => {
                       alt=""
                     />
                   </div>
-                  <div className="col-5 d-flex">
+                  <div className="col-5 d-flex align-items-center justify-content-center">
                     <div className="card-block justify-content-center align-self-center">
                       <h4 className="card-title">
                         {props.campaign_title}
