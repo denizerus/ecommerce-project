@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container mt-2">
         <div className="row">
           <div className="col">
-            <h1 style={{color: 'orange'}}>eCommerce</h1>
+            <h1 style={{color: 'orange'}}>HepsiŞurada</h1>
           </div>
           <div className="col-6 d-grid align-items-center">
             <SearchBar />

@@ -11,7 +11,7 @@ const SuperPrice = () => {
 
       <div className="container mt-4">
         <div className="row">
-          <Carousel cols={4} rows={1} gap={0} loop>
+          <Carousel cols={4} rows={1} gap={10} loop>
             {super_price_info.map((super_price_info) => {
               return (
                 <Carousel.Item key={super_price_info.id}>

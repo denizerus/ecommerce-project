@@ -9,15 +9,19 @@
         "campaign_text": "Okullar açılıyor, çocuklarınızın okul alışverişini sitemizdeki kampanyaları takip ederek yapabilirsiniz.",
         "campaign_footer": "Kampanya koşulları açıklanmıştır.",
         "campaign_bg_img": "https://static.vecteezy.com/system/resources/thumbnails/001/886/903/small/light-blue-green-blurred-background-vector.jpg",
-        "campaign_img": "https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2134_20220819132452.png/format:webp"
+        "campaign_img": "https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2134_20220819132452.png/format:webp",
+        "campaign_btn_text": "Fırsatları Yakala",
+        "campaign_link": "/"
       },
       {
         "id": 1,
         "campaign_title": "Size Özel Kampanyalar",
-        "campaign_text": "19 Ağustos-30 Ağustos tarihleri arasındaki kampanyalarımızdan faydalanmak için sitemizdeki indirimleri kaçırmayın...",
+        "campaign_text": "19 Ağustos-30 Ağustos tarihleri arasındaki kampanyalarımızdan faydalanmak için sitemizdeki indirimleri kaçırmayın... ",
         "campaign_footer": "Kampanya koşulları açıklanmıştır.",
         "campaign_bg_img": "https://media.istockphoto.com/vectors/orange-colour-background-vector-vector-id925115794?k=20&m=925115794&s=612x612&w=0&h=HWi_wh3K8-O-Rj54opBJH7hJsLJ9sSJReFWMrr1CU3Y=",
-        "campaign_img": "https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2127_20220318172750.png"
+        "campaign_img": "https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2127_20220318172750.png",
+        "campaign_btn_text": "Fırsatları Yakala",
+        "campaign_link": "/"
       },
       {
         "id": 2,
@@ -25,7 +29,19 @@
         "campaign_text": "Peşin fiyatına 6 taksitle iPad satışlarımız başlamıştır",
         "campaign_footer": "Kampanya koşulları açıklanmıştır.",
         "campaign_bg_img": "https://media.istockphoto.com/vectors/abstract-white-and-gray-gradient-curve-with-halftone-modern-vector-vector-id1267682907?k=20&m=1267682907&s=612x612&w=0&h=24kAuhHGjbZtFI6hVA08p-ng8givYhIc4tehlQZCKy4=",
-        "campaign_img": "https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2111_20220812130355.jpeg/format:webp"
+        "campaign_img": "https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2111_20220812130355.jpeg/format:webp",
+        "campaign_btn_text": "Fırsatları Yakala",
+        "campaign_link": "/"
+      },
+      {
+        "id": 3,
+        "campaign_title": "Influencer Kampanyası",
+        "campaign_text": "Ünlü influencer günlük rutininde kullandığı ürünleri siz değerli takipçileriyle paylaşıyor",
+        "campaign_footer": "Kampanya koşulları açıklanmıştır.",
+        "campaign_bg_img": "https://media.istockphoto.com/vectors/abstract-pink-background-brochure-or-poster-template-valentines-day-vector-id1292892211?k=20&m=1292892211&s=612x612&w=0&h=U3dOm52yF0RRtnMZ20y32ojZuNgeRXM4u2Mf3LydXuU=",
+        "campaign_img": "https://i.ibb.co/23ShZGZ/influencer-campaign.jpg",
+        "campaign_btn_text": "Influencer Seçimleri",
+        "campaign_link": "/fenomen"
       }
     ]
   }

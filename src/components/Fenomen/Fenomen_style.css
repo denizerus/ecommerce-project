@@ -1,0 +1,11 @@
+.main_container {
+    height: max-content;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    background-color: white;
+  }
