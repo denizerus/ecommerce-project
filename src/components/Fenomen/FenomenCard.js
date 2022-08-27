@@ -1,8 +1,14 @@
 import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button'
 import '../SuperPrice/SuperPrice.css'
+import {useNavigate} from 'react-router-dom';
 
 const FenomenCard = ({props}) => {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = "/fenomen/"+props.id;
+    navigate(path.toString());
+  };
   const [hover, setHover] = useState(false);
   const onHover = () => {
     setHover(true);
@@ -18,9 +24,9 @@ const FenomenCard = ({props}) => {
           <p className="card-title mb-2">{props.fenomen_product_title}</p>
           <img src={props.fenomen_product_img} className="card-img-top" alt="..." />
           <Button
+          onClick={routeChange}
             onMouseEnter={onHover}
             onMouseLeave={onLeave}
-            href={props.id}
             className="btn-super-price btn btn-light stretched-link mt-3 mb-1 btn-lg"
           >
             {hover ? "Sepete Ekle" : props.fenomen_product_new_price}

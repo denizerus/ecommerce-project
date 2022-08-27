@@ -5,6 +5,7 @@ import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
 import {Fenomen} from './components/Fenomen/Fenomen';
 import { Home } from './components/Home/Home';
+import { Product } from './components/Product/Product';
 
 function App() {
   return (
@@ -55,6 +56,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home/> } />
               <Route path="/fenomen" element={<Fenomen />} />
+              <Route path="/fenomen/:productID" element={<Product />} />
+              <Route path="/:productID" element={<Product />} />
             </Routes>
           </div>
         </div>
