@@ -1,6 +1,6 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
-import AddToBasketBtn from '../AddToBasketBtn/AddToBasketBtn';
+import AddToCartBtn from '../AddToCartBtn/AddToCartBtn';
 import product_info from './product_db.json';
 import Product_style from './Product_style.css';
 
@@ -26,7 +26,7 @@ export const Product = () => {
           <h2>{product.product_new_price}</h2>
           <h5>{product.product_details}</h5>
 
-          <AddToBasketBtn />
+          <AddToCartBtn productID={productID} />
         </div>
       </div>
       <h1>Current pathname: {productID}</h1>
