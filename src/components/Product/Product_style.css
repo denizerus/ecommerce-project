@@ -6,3 +6,8 @@
 .product_info {
     background-color: #f5f5f5;
 }
+
+.image {
+    height: 400px;
+    object-fit: cover;
+}

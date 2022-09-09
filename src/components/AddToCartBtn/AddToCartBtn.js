@@ -52,13 +52,6 @@ const AddToCartBtn = ({productID}) => {
       }));
     }
     }
-
-
-    //////////////////////// DOĞRU KULLANIM ///////////////////
-    //   setCartData( prevState => ({
-    //     order: [...prevState.order,  newCartData]
-    // }));
-    ///////////////////////////////////////////////////////////
   }
 
   return (

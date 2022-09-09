@@ -6,7 +6,8 @@ import {useNavigate} from 'react-router-dom';
 const FenomenCard = ({props}) => {
   let navigate = useNavigate();
   const routeChange = () => {
-    let path = "/fenomen/"+props.id;
+    let path = "/"+props.id;
+    // let path = "/fenomen/"+props.id;
     navigate(path.toString());
   };
   const [hover, setHover] = useState(false);
@@ -22,7 +23,7 @@ const FenomenCard = ({props}) => {
       <div className="card text-center" style={{width: '15rem'}}>
         <div className="card-body">
           <p className="card-title mb-2">{props.fenomen_product_title}</p>
-          <img src={props.fenomen_product_img} className="card-img-top" alt="..." />
+          <img src={props.fenomen_product_img} className="card-img-top fenomen_product_img" alt="..." />
           <Button
           onClick={routeChange}
             onMouseEnter={onHover}

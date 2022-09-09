@@ -18,15 +18,15 @@ export const Product = () => {
       <div className="row">
         <div className="col-6 product_image d-flex align-items-center justify-content-center">
           <div className="row">
-            <img src={product.product_img} alt="ürün_alt" />
+            <img className="image" src={product.product_img} alt="ürün_alt" />
           </div>
         </div>
         <div className="col-6 product_info p-4">
-          <h5>{product.product_title}</h5>
-          <h2>{product.product_new_price}</h2>
-          <h5>{product.product_details}</h5>
+          <h5 className="">{product.product_title}</h5>
+          <h2 className="">{product.product_new_price}</h2>
+          <h6 className="pb-5 pt-3">{product.product_details}</h6>
 
-          <AddToCartBtn productID={productID} />
+          <AddToCartBtn key={productID} productID={productID} />
         </div>
       </div>
       <h1>Current pathname: {productID}</h1>

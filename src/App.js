@@ -8,10 +8,11 @@ import {Home} from './components/Home/Home';
 import {Product} from './components/Product/Product';
 import {CartContext} from './context/ShoppingCartContext';
 import {useState} from 'react';
+import { ShoppingCart } from './components/ShoppingCart/ShoppingCart';
 
 function App() {
   const [cartData, setCartData] = useState({
-    order: [{id: null, quantitiy: null}],
+    order: [{id: 1, quantitiy: 3}],
   });
 
   const data = {
@@ -35,7 +36,7 @@ function App() {
                   <Nav.Link
                     as={Link}
                     to="/fenomen"
-                    style={{color: 'red', fontweight: 'bold'}}
+                    //style={{color: 'red', fontweight: 'bold'}}
                   >
                     Fenomen Seçimleri
                   </Nav.Link>
@@ -74,7 +75,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/fenomen" element={<Fenomen />} />
-              <Route path="/fenomen/:productID" element={<Product />} />
+              <Route path="/cart" element={<ShoppingCart />} />
+              {/* <Route path="/:productID" element={<Product />} /> */}
               <Route path="/:productID" element={<Product />} />
             </Routes>
           </div>

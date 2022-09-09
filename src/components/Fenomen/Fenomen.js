@@ -8,7 +8,6 @@ export const Fenomen = () => {
     <React.Fragment>
       <div
         className="main_container"
-        div
         style={{
           backgroundPosition: 'center',
           backgroundSize: 'cover',
