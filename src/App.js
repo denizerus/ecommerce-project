@@ -8,11 +8,11 @@ import {Home} from './components/Home/Home';
 import {Product} from './components/Product/Product';
 import {CartContext} from './context/ShoppingCartContext';
 import {useState} from 'react';
-import { ShoppingCart } from './components/ShoppingCart/ShoppingCart';
+import {ShoppingCart} from './components/ShoppingCart/ShoppingCart';
 
 function App() {
   const [cartData, setCartData] = useState({
-    order: [{id: 1, quantitiy: 3}],
+    order: [{id: 21, quantitiy: 3}],
   });
 
   const data = {

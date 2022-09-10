@@ -16,7 +16,7 @@ export const Fenomen = () => {
         }}
       >
         <div className="container">
-          <h1 className="m-5">Influencer'ın Seçimleri</h1>
+          <h1 className="ml-1 mt-2 mb-2">Influencer'ın Seçimleri</h1>
           <img
             className="card-img mb-4"
             src="https://i.ibb.co/wrkLXN9/influencer-header.jpg"
@@ -25,13 +25,8 @@ export const Fenomen = () => {
               borderRadius: '20px',
             }}
           />
-          <h5 className="App m-3">
-            Son zamanların gözde influencer'ı Lorem Ipsum da alışverişini bizim
-            sitemizden yapıyor.
-          </h5>
-          <h5 className="App m-3">
-            Sizler için özellikle seçtiği ürünleri aşağıda bulabilirsiniz.
-          </h5>
+          <h5 className="m-3" style={{textAlign: "center"}}>Son zamanların gözde influencer'ı Lorem Ipsum da alışverişini bizim sitemizden yapıyor.</h5>
+          <h5 className="m-3"style={{textAlign: "center"}}>Sizler için özellikle seçtiği ürünleri aşağıda bulabilirsiniz.</h5>
           <hr />
           <div className="row mt-5">
             {fenomen_items.map((fenomen_items) => {

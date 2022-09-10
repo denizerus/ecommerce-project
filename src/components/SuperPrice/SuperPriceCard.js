@@ -31,12 +31,11 @@ const SuperPriceCard = ({props}) => {
             />
             <Link to={'/' + props.id}>
               <Button
-                // onClick={routeChange}
                 onMouseEnter={onHover}
                 onMouseLeave={onLeave}
                 className="btn-super-price btn btn-light stretched-link mt-3 mb-1 btn-lg"
               >
-                {hover ? 'Sepete Ekle' : props.super_price_new_price}
+                {hover ? 'Sepete Ekle' : `${props.super_price_new_price} TL`}
               </Button>
             </Link>
             <p
@@ -47,7 +46,7 @@ const SuperPriceCard = ({props}) => {
                 textDecorationStyle: 'solid',
               }}
             >
-              {hover ? ' ' : props.super_price_old_price}
+              {hover && props.super_price_old_price!=null ? '' : props.super_price_old_price}
             </p>
           </div>
         </div>

@@ -5,6 +5,34 @@ import './ShoppingCard_Style.css';
 
 export const ShoppingCart = () => {
   const {cartData} = useContext(CartContext);
+  
+  function CalculateTotalPrice(){
+    var total_product_price=0;
+      
+      cartData.order.forEach(order => {
+        product_db.forEach(p_data => {
+          if(p_data.id==order.id){
+            total_product_price+=(order.quantitiy*parseFloat(p_data.product_new_price).toFixed(2));
+          }
+        });
+        
+      });
+      return total_product_price.toFixed(2);
+   /* cartData.order.map((order) => {
+      return product_db.map((p_data) => {
+        if (p_data.id == order.id) {
+          return (
+            total_product_price+=(order.quantitiy*p_data.product_new_price),
+            console.log(total_product_price)
+          );
+        }
+      });
+    })}*/
+  
+
+}
+
+
   return (
     <div className="container">
       <div className="row">
@@ -29,7 +57,7 @@ export const ShoppingCart = () => {
                           
                           <div className="col-9">
                             <p>Ürün Adı: {p_data.product_title}</p>
-                            <p>Fiyatı: {p_data.product_new_price}</p>
+                            <p>Fiyatı: {p_data.product_new_price} TL</p>
                             <p>Miktarı: {order.quantitiy}</p>
                           </div>
                         </div>
@@ -41,7 +69,16 @@ export const ShoppingCart = () => {
             </ul>
           </div>
         </div>
-        <div className="col-3">2 of 3 (wider)</div>
+        <div className="col-3">
+          <div className='card'>
+            <div className='card-header'>
+              Seçilen ürünler
+            </div>
+            <div className='card-body'>
+              Toplam: {CalculateTotalPrice()} TL
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
