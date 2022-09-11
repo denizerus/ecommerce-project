@@ -6,10 +6,10 @@ import Product_style from './Product_style.css';
 
 export const Product = () => {
   const location = useLocation();
-  let productID = location.pathname.substring(1);
+  let productID = Number(location.pathname.substring(1));
   let product = null;
   for(let key in product_info){
-      if(product_info[key].id == productID){
+      if(product_info[key].id === productID){
         product = product_info[key];
     }
   }

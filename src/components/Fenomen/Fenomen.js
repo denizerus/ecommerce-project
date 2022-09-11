@@ -20,18 +20,18 @@ export const Fenomen = () => {
           <img
             className="card-img mb-4"
             src="https://i.ibb.co/wrkLXN9/influencer-header.jpg"
-            alt="Card image"
+            alt="fenomen_campaign"
             style={{
               borderRadius: '20px',
             }}
           />
           <h5 className="m-3" style={{textAlign: "center"}}>Son zamanların gözde influencer'ı Lorem Ipsum da alışverişini bizim sitemizden yapıyor.</h5>
-          <h5 className="m-3"style={{textAlign: "center"}}>Sizler için özellikle seçtiği ürünleri aşağıda bulabilirsiniz.</h5>
+          <h5 className="m-3" style={{textAlign: "center"}}>Sizler için özellikle seçtiği ürünleri aşağıda bulabilirsiniz.</h5>
           <hr />
-          <div className="row mt-5">
+          <div className="row mt-5" style={{justifyContent: "center"}}>
             {fenomen_items.map((fenomen_items) => {
               return (
-                <FenomenCard props={fenomen_items} key={fenomen_items.id} />
+                <FenomenCard props={fenomen_items} key={fenomen_items.id}  />
               );
             })}
           </div>

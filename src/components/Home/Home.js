@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <React.Fragment>
       <Promotions />
-      <div className="App">
+      <div className="container">
         <SuperPrice/>
       </div>
     </React.Fragment>

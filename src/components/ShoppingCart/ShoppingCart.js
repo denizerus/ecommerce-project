@@ -9,45 +9,21 @@ export const ShoppingCart = () => {
 
   const {cartData, setCartData} = useContext(CartContext);
 
-  function increaseProductQuantitiy(o_id, o_quantitiy) {
-    var currentOrder;
-    cartData.order.forEach((order) => {
-      if (order.id == o_id) {
-        currentOrder = order;
-        currentOrder.quantitiy += 1;
-      }
-    });
-
-    console.log(currentOrder);
-    // setCartData(currentOrder)
-  }
-
   function CalculateTotalPrice() {
     var total_product_price = 0;
 
     cartData.order.forEach((order) => {
       product_db.forEach((p_data) => {
-        if (p_data.id == order.id) {
+        if (p_data.id === order.id) {
           total_product_price +=
             order.quantitiy * parseFloat(p_data.product_new_price).toFixed(2);
         }
       });
     });
-    //return total_product_price.toLocaleString(undefined, {maximumFractionDigits:2});
 
     return total_product_price
       .toFixed(2)
       .replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-    /* cartData.order.map((order) => {
-      return product_db.map((p_data) => {
-        if (p_data.id == order.id) {
-          return (
-            total_product_price+=(order.quantitiy*p_data.product_new_price),
-            console.log(total_product_price)
-          );
-        }
-      });
-    })}*/
   }
   if (width > 1080) {
     return (
@@ -59,7 +35,7 @@ export const ShoppingCart = () => {
               <ul className="list-group list-group-flush">
                 {cartData.order.map((order) => {
                   return product_db.map((p_data) => {
-                    if (p_data.id == order.id) {
+                    if (p_data.id === order.id) {
                       return (
                         <li className="list-group-item" key={order.id}>
                           <div className="row cart_item_container">
@@ -76,7 +52,6 @@ export const ShoppingCart = () => {
                               <h5 className="mt-4">
                                 {p_data.product_new_price} TL
                               </h5>
-                              <p>Miktarı: {order.quantitiy}</p>
                             </div>
                             <div className="col-1">
                               <div className="row text-center">
@@ -85,7 +60,6 @@ export const ShoppingCart = () => {
                                     const newCartData = cartData.order.map(
                                       (obj) => {
                                         if (obj.id === order.id) {
-                                          console.log(obj);
                                           return {
                                             ...obj,
                                             quantitiy: order.quantitiy + 1,
@@ -110,6 +84,30 @@ export const ShoppingCart = () => {
                                   {order.quantitiy}
                                 </p>
                                 <button
+                                  onClick={() => {
+                                    const newCartData = cartData.order.map(
+                                      (obj) => {
+                                        if (obj.id === order.id) {
+                                          if (order.quantitiy > 1) {
+                                            return {
+                                              ...obj,
+                                              quantitiy: order.quantitiy - 1,
+                                            };
+                                          } else {
+                                            return {
+                                              ...cartData.order.filter(
+                                                (item) => item.id !== order.id
+                                              ),
+                                            };
+                                          }
+                                        }
+                                        return obj;
+                                      }
+                                    );
+                                    setCartData((prevState) => ({
+                                      order: newCartData,
+                                    }));
+                                  }}
                                   className="btn btn-warning mt-1"
                                   style={{
                                     color: 'white',
@@ -124,6 +122,8 @@ export const ShoppingCart = () => {
                         </li>
                       );
                     }
+
+                    return <div />;
                   });
                 })}
               </ul>
@@ -137,9 +137,10 @@ export const ShoppingCart = () => {
               >
                 SEÇİLEN ÜRÜNLER
               </div>
+
               <div className="card-body h3">
-                <div className="col">
-                  {CalculateTotalPrice()} TL
+                <div className="text-center">{CalculateTotalPrice()} TL</div>
+                <div className="text-center">
                   <button
                     type="button"
                     className="btn btn-warning mt-3"
@@ -168,7 +169,7 @@ export const ShoppingCart = () => {
             <ul className="list-group list-group-flush">
               {cartData.order.map((order) => {
                 return product_db.map((p_data) => {
-                  if (p_data.id == order.id) {
+                  if (p_data.id === order.id) {
                     return (
                       <li className="list-group-item" key={order.id}>
                         <div className="row cart_item_container">
@@ -190,19 +191,19 @@ export const ShoppingCart = () => {
                             <div className="row text-center">
                               <button
                                 onClick={() => {
-                                  const newCartData = cartData.order.map(obj => {
-                                    if(obj.id === order.id){
-                                      console.log(obj)
-                                      return {...obj, quantitiy: order.quantitiy+1}
+                                  const newCartData = cartData.order.map(
+                                    (obj) => {
+                                      if (obj.id === order.id) {
+                                        return {
+                                          ...obj,
+                                          quantitiy: order.quantitiy + 1,
+                                        };
+                                      }
+                                      return obj;
                                     }
-                                    return obj;
-                                  })
-                                  console.log("newCartData", newCartData);
-                                  console.log("cartData", cartData);
-                                  
-                                  
+                                  );
                                   setCartData((prevState) => ({
-                                    order: newCartData
+                                    order: newCartData,
                                   }));
                                 }}
                                 className="btn btn-warning mb-1"
@@ -217,6 +218,30 @@ export const ShoppingCart = () => {
                                 {order.quantitiy}
                               </p>
                               <button
+                                onClick={() => {
+                                  const newCartData = cartData.order.map(
+                                    (obj) => {
+                                      if (obj.id === order.id) {
+                                        if (order.quantitiy > 1) {
+                                          return {
+                                            ...obj,
+                                            quantitiy: order.quantitiy - 1,
+                                          };
+                                        } else {
+                                          return {
+                                            ...cartData.order.filter(
+                                              (item) => item.id !== order.id
+                                            ),
+                                          };
+                                        }
+                                      }
+                                      return obj;
+                                    }
+                                  );
+                                  setCartData((prevState) => ({
+                                    order: newCartData,
+                                  }));
+                                }}
                                 className="btn btn-warning mt-1"
                                 style={{
                                   color: 'white',
@@ -231,6 +256,8 @@ export const ShoppingCart = () => {
                       </li>
                     );
                   }
+
+                  return <div />;
                 });
               })}
             </ul>

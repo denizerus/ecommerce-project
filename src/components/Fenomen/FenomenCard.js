@@ -19,7 +19,7 @@ const FenomenCard = ({props}) => {
     setHover(false);
   };
   return (
-    <div className="col-sm mb-4">
+    <div className="col-sm mb-4 justify-content-center d-flex" >
       <div className="card text-center" style={{width: '15rem'}}>
         <div className="card-body">
           <p className="card-title mb-2">{props.fenomen_product_title}</p>

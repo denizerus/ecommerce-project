@@ -4,9 +4,25 @@ import Button from 'react-bootstrap/Button';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import {Link} from 'react-router-dom';
+import {CartContext, useContext} from '../../context/ShoppingCartContext';
+import product_db from '../Product/product_db.json'
 
 const Header = () => {
+  const {cartData} = useContext(CartContext);
 
+  function CalculateTotalProduct() {
+    var total_product_price = 0;
+
+    cartData.order.forEach((order) => {
+      product_db.forEach((p_data) => {
+        if (p_data.id === order.id) {
+          total_product_price += order.quantitiy;
+        }
+      });
+    });
+
+    return total_product_price;
+  }
   return (
     <React.Fragment>
       <div className="container mt-2">
@@ -26,7 +42,7 @@ const Header = () => {
             <Button
               as={Link}
               to="/cart"
-              style={{width: '3rem', height: '3rem', position: 'relative'}}
+              style={{width: '3rem', height: '3rem', position: 'relative', marginBottom: '1rem'}}
               variant="outline-primary"
               className="rounded-circle"
             >
@@ -50,7 +66,7 @@ const Header = () => {
                   transform: 'translate(25%, 25%)',
                 }}
               >
-                {/* // AŞAĞIDA KAÇ ADET ÜRÜN OLDUĞU YAZMALI */}0
+                {CalculateTotalProduct()}
               </div>
             </Button>
           </div>
