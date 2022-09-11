@@ -2,7 +2,7 @@
 
 ## A project with using **React Framework**
 
-You can visit [my eCommerce Project](https://ecommerce-project-3qgaiwodt-denizerus.vercel.app/)
+You can visit [my eCommerce Project](https://ecommerce-project-denizerus.vercel.app/)
 
 This project is a clone of one of Turkey's most popular e-commerce site, hepsiburada. It's still developing day by day.
 
