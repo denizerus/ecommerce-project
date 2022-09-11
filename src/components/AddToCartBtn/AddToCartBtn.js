@@ -30,7 +30,7 @@ const AddToCartBtn = ({productID}) => {
     if (dahaOnceVar) {
       for (var keyy in cartData) {
         var cdataa = cartData[keyy];
-        cdataa.map((data, idx) => {
+        cdataa.map((data) => {
           if (data.id == productID) {
             currentOrder=data;
             currentOrder.quantitiy+=numberOfProduct;

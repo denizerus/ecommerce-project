@@ -12,7 +12,7 @@ import {ShoppingCart} from './components/ShoppingCart/ShoppingCart';
 
 function App() {
   const [cartData, setCartData] = useState({
-    order: [{id: 21, quantitiy: 3}],
+    order: [],
   });
 
   const data = {
