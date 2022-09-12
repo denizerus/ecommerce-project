@@ -2,7 +2,7 @@ import React from 'react';
 import {useLocation} from 'react-router-dom';
 import AddToCartBtn from '../AddToCartBtn/AddToCartBtn';
 import product_info from './product_db.json';
-import Product_style from './Product_style.css';
+import './Product_style.css';
 
 export const Product = () => {
   const location = useLocation();

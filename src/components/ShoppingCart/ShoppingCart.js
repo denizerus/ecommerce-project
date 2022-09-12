@@ -9,6 +9,20 @@ export const ShoppingCart = () => {
 
   const {cartData, setCartData} = useContext(CartContext);
 
+  function CalculateTotalProduct() {
+    var total_product_price = 0;
+
+    cartData.order.forEach((order) => {
+      product_db.forEach((p_data) => {
+        if (p_data.id === order.id) {
+          total_product_price += order.quantitiy;
+        }
+      });
+    });
+
+    return total_product_price;
+  }
+
   function CalculateTotalPrice() {
     var total_product_price = 0;
 
@@ -25,6 +39,15 @@ export const ShoppingCart = () => {
       .toFixed(2)
       .replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
   }
+
+  if (CalculateTotalProduct() === 0){
+    return (
+      <div className='container'>
+        <h5 style={{marginTop: '1rem'}}>Sepetinizde ürün bulunmamaktadır.</h5>
+      </div>
+    )
+  }else{
+
   if (width > 1080) {
     return (
       <div className="container">
@@ -37,7 +60,7 @@ export const ShoppingCart = () => {
                   return product_db.map((p_data) => {
                     if (p_data.id === order.id) {
                       return (
-                        <li className="list-group-item" key={order.id}>
+                        <li className="list-group-item" key={p_data.id}>
                           <div className="row cart_item_container">
                             <div className="col-2">
                               <img
@@ -122,8 +145,6 @@ export const ShoppingCart = () => {
                         </li>
                       );
                     }
-
-                    return <div />;
                   });
                 })}
               </ul>
@@ -256,8 +277,6 @@ export const ShoppingCart = () => {
                       </li>
                     );
                   }
-
-                  return <div />;
                 });
               })}
             </ul>
@@ -285,4 +304,5 @@ export const ShoppingCart = () => {
       </div>
     );
   }
+}
 };

@@ -21,7 +21,7 @@ const SuperPriceCard = ({props}) => {
   return (
     <React.Fragment>
       <div className="col-sm">
-        <div className="card text-center" style={{width: '15rem'}}>
+        <div className="card text-center" style={{marginRight: "1rem"}}>
           <div className="card-body">
             <p className="card-title mb-2">{props.super_price_title}</p>
             <img
