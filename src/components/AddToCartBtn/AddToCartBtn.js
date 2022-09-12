@@ -55,7 +55,7 @@ const AddToCartBtn = ({productID}) => {
   }
 
   return (
-    <div className="col d-flex">
+    <div className="col d-flex justify-content-center">
       <div className="row d-flex">
         <ButtonGroup aria-label="Basic example">
           <Button

@@ -4,7 +4,8 @@
     "product_title": "BRITA MAXTRA Plus Yedek Su Artıma Filresi Altılı",
     "product_old_price": null,
     "product_new_price": "319.90",
-    "product_img": "https://productimages.hepsiburada.net/s/238/200-200/110000221332927.jpg"
+    "product_img": "https://productimages.hepsiburada.net/s/238/200-200/110000221332927.jpg",
+    "product_details": "1 MAXTRA+ filtre~150 lt filtrelenmiş su: MAXTRA+ Filtreleme Teknolojisi, tek bir filtre ile 150 litreye kadar yumuşak ve lezzetli içme suyu sağlar. Bu ortalama 8 damacana suya denk gelmektedir! MAXTRA+ filtre, bütün BRITA filtreli sürahi modelleriyle uyumludur."
   },
   {
     "id": 1,
@@ -19,42 +20,48 @@
     "product_title": "Joystar Sızdırmaz Vakumlu Çift Katmanlı Termos",
     "product_old_price": null,
     "product_new_price": "169.00",
-    "product_img": "https://productimages.hepsiburada.net/s/173/200-200/110000136705144.jpg"
+    "product_img": "https://productimages.hepsiburada.net/s/173/200-200/110000136705144.jpg",
+    "product_details": "Joystar Sızdırmaz Vakumlu Çift Katmanlı Paslanmaz Çelik Termos 500 ml, 7 SAAT SICAK, 9 SAAT SOĞUK TUTAR"
   },
   {
     "id": 3,
     "product_title": "Fit And Smart Fs-20 Eliptik Manyetik Kondisyon Bisikleti",
     "product_old_price": null,
     "product_new_price": "3039.05",
-    "product_img": "https://productimages.hepsiburada.net/s/141/200-200/110000094614163.jpg"
+    "product_img": "https://productimages.hepsiburada.net/s/141/200-200/110000094614163.jpg",
+    "product_details": "*Elden Nabız Ölçme *Nabız göstergeleri *LCD Ekranda Süre, Hız, Kalori Ölçümü *4,2 kg manyetik disk *Çift yönlü kayış sayesinde sessiz kullanım *8 kademeli direnç sertlik sistemi *Maximum 100 kg kullanıcı ağırlığı *Ağırlık: (Gv) 27,5 kg *Kurulu Ölçüler: 102,5x61x154 cm *Kutu Ölçüleri:82,5x30x49 cm *Rulmanlı pedallar kayış sistemli manyetik disk ve sarsıntı önleyici ayaklar sayesinde maximum sessizlik sağlar ve bozuk zeminlere de uyum sağlayabilir. *Terlemeyi azaltan kanserojen madde içermeyen yumuşak tutma kolları pedleri *Taşımayı kolaylaştırıcı döner arka ayaklar *Sarsıntı önleyici anti shake ön ayaklar -Manyetik bisiklet ile mekanik bisiklet arasındaki fark, mekanik bisikletlerin içinde disk yoktur Basit bir kayış tertibatıyla çalışır, ancak sürtünmenin çok olmasından dolayı akıcı bir sürüş sağlamaz, bacaklar düzenli bir şekilde çalışamaz. -Ancak manyetik sistemler bir disk aracılığı ile çalışır. Baskı ve sertlik de mıknatıs ile sağlanır, dolayısıyla sürtünme olmaz ve akıcı bir sürüş sağlar, keyfiniz kaçmaz."
   },
   {
     "id": 4,
-    "product_title": "Reeder P13 Blue MAx 2022 128 GB (Reeder Türkiye Garantili)",
+    "product_title": "Reeder P13 Blue Max 2022 128 GB (Reeder Türkiye Garantili)",
     "product_old_price": null,
     "product_new_price": "2299.01",
-    "product_img": "https://productimages.hepsiburada.net/s/202/200-200/110000175851171.jpg"
+    "product_img": "https://productimages.hepsiburada.net/s/202/200-200/110000175851171.jpg",
+    "product_details": "Bir adım önde olmanızı sağlayacak kullanıcı arayüzü geçişleri ve daha iyi çoklu görev becerileri sağlar. Takılmadan devam edin! Güvenlikte En Üst Seviye! Güvenliğinize sizin kadar değer veriyoruz. Sizden başka kimsenin telefonunuza erişmesine müsaade etmiyoruz. Anahtar olarak benzersiz yüz tanıma sistemi saniyeler içinde güvenli olarak açmanızı sağlar."
   },
   {
     "id": 5,
     "product_title": "Tefal G26019 Titanyum 3X UltimateOne Wok Tava 28 cm",
     "product_old_price": null,
     "product_new_price": "599.99",
-    "product_img": "https://productimages.hepsiburada.net/s/55/200-200/11223880269874.jpg"
+    "product_img": "https://productimages.hepsiburada.net/s/55/200-200/11223880269874.jpg",
+    "product_details": "Isıtmak, kavurmak, sotelemek, servis etemek… Pişirme işinin bir çok adımı var! Tefal bu yüzden Ultimate serisini yarattı. Tekrar tekrar kullanım için. Tefal'in ekstra dayanıklı, 3 kata kadar daha uzun ömürlü* titanyum kaplamasının Thermo-Fusion™+ indüksiyon teknolojisiyle birleştiği Ultimate serisini homojen pişirme ve mükemmel sonuçlar için rahatlıkla kullanabilirsiniz. Günlük kullanım için bir çok ihtiyacı karşılayacak şekilde geliştirildi. Sotelenmiş etten, balığa, tavuktan sebzeye bir çok tarif için ideal bir seridir. Titanyum parçacıklarıyla güçlendirilmiştir. Tefal'in standart kaplamalarına göre 3 kata kadar daha dayanıklıdır. Ayrıca Thermo-Fusion™+ indüksiyon teknolojisi ile homojen ve etkili pişirme deneyimi sunar. Tüm bunlara ek olarak, Thermo-Signal™ teknolojisi de iddeal pişirme sıcaklığını göstererek size lezzetli tarifleriniz için yardımcı olur. Tüm bunlar Tefal Ultimate serisinde!"
   },
   {
     "id": 6,
     "product_title": "Fairy Platinum Plus 84'lü Bulaşık Makinası Deterjanı Tableti / Kapsülü",
     "product_old_price": null,
     "product_new_price": "243.90",
-    "product_img": "https://productimages.hepsiburada.net/s/169/200-200/110000132364551.jpg"
+    "product_img": "https://productimages.hepsiburada.net/s/169/200-200/110000132364551.jpg",
+    "product_details": "Fairy Platinum Plus hepsi bir arada bulaşık makinesi tabletleri, yepyeni hissi veren bir temizlik için Fairy’nin en iyi temizleme gücünü sunar ve hatta zamanla oluşan donukluğu gidererek bulaşıklarınızın orijinal parlaklığını geri kazandırmaya yardımcı olur. Fairy Platinum Plus’ta ön durulamayı sizin yerinize yapan dahili ön yıkama sistemi bulunur. Fairy Platinum Plus sayesinde ön yıkama yapmaya gerek yok; böylece sudan tasarruf edebilir ve daha çevre dostu olabilirsiniz. Fairy sıvı ve tozu tek bir güçlü kapsülde birleştirir. Kolay çözülen yapısı, hızla ayrışır yağ çözer ve kısa programlarda bile işi bir an önce halletmek için temizlemeye hemen başlar. Üstelik kullanımı son derece kolaydır! Ambalajı açmaya gerek yok; ürünü bulaşık makinenizin deterjan bölümüne yerleştirmeniz yeterli."
   },
   {
     "id": 7,
     "product_title": "Grundig 43 GEF 5900 B 43'' 109 Ekran Full HD Uydu Alıcılı LED TV",
     "product_old_price": "4149.00",
     "product_new_price": "3999.00",
-    "product_img": "https://productimages.hepsiburada.net/s/61/200-200/110000003146248.jpg"
+    "product_img": "https://productimages.hepsiburada.net/s/61/200-200/110000003146248.jpg",
+    "product_details": "Hatlarının şıklığı ve inceliği ile öne çıkmayı başaran Grundig 43GEF5900 B LED TV sayesinde salonunuzda son derece zarif bir alan oluşturabilir, dekorasyonunuzu kolayca tamamlayabilirsiniz. Ürünün estetik tasarımı, bulunduğu ortama dekoratif bir detay katarak evinizin dekorunu zenginleştirir. Grundig televizyonun son derece ince hatlarla üretilmiş olmasının yanı sıra bu ürünün ekranı da oldukça ince üretilir. Aynı zamanda arka kısmının da düz ve dar hatlara sahip olması, televizyonunuzu duvara sıfır şekilde evinizde konumlandırabilmeniz için size ideal bir destek sağlar. TV konsolu ve TV ünitesi gibi mobilyalarla uyumlu şekilde kullanabileceğiniz Grundig 43GEF5900 B Full HD televizyon, hem zarif hem de kullanışlı yapısı sayesinde ihtiyacınız olan her şeyi size sunar. Ürünün sahip olduğu ayaklar da size pratik bir destek sağlar. Televizyona denge kazandıran ayaklar sayesinde ürünün kayması ve düşmesi önlenir. Şık ayakları ile gövdesinin tasarımı birbirini tamamladığı için bu ürünü oldukça zarif şekilde kullanmaya başlayabilirsiniz. Öte yandan hafif olduğu için de televizyonunuzu rahatça taşıyıp kullanabilirsiniz."
   },
   {
     "id": 8,
