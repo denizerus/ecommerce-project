@@ -1,3 +1,5 @@
+/* eslint-disable no-loop-func */
+/* eslint-disable array-callback-return */
 import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
@@ -18,8 +20,8 @@ const AddToCartBtn = ({productID}) => {
 
     for (var key in cartData) {
       var cdata = cartData[key];
-      cdata.map((data, idx) => {
-        if (data.id == productID) {
+      cdata.map((data) => {
+        if (data.id === productID) {
           dahaOnceVar = true;
         }
       });
@@ -31,7 +33,7 @@ const AddToCartBtn = ({productID}) => {
       for (var keyy in cartData) {
         var cdataa = cartData[keyy];
         cdataa.map((data) => {
-          if (data.id == productID) {
+          if (data.id === productID) {
             currentOrder=data;
             currentOrder.quantitiy+=numberOfProduct;
           }

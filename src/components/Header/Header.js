@@ -6,6 +6,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import {Link} from 'react-router-dom';
 import {CartContext, useContext} from '../../context/ShoppingCartContext';
 import product_db from '../Product/product_db.json'
+import './Header_Style.css'
 
 const Header = () => {
   const {cartData} = useContext(CartContext);
@@ -28,13 +29,13 @@ const Header = () => {
       <div className="container mt-2">
         <div className="row">
           <div className="col">
-            <h1 style={{color: 'orange'}}>eCommerce</h1>
+            <h1 style={{color: 'orange'}}>eTicaret</h1>
           </div>
           <div className="col-6 d-grid align-items-center">
             <SearchBar />
           </div>
           <div className="col d-grid align-items-center justify-content-center">
-            <DropdownButton id="dropdown-basic-button" title="Hesabım">
+            <DropdownButton id="dropdown-basic-button" title="Hesabım" className='dropdown' style={{color: '#ece'}}>
               <Dropdown.Item href="#/action-1">Giriş Yap</Dropdown.Item>
             </DropdownButton>
           </div>

@@ -2,26 +2,23 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import product_db from '../Product/product_db.json';
 import {useNavigate} from 'react-router-dom';
-import { Search } from 'react-router-dom';
 
 export const SearchBar = () => {
   let navigate = useNavigate();
   const [value, setValue] = useState('');
 
-  const onChange = (event) => {
-    
+  const onChange = (event) => {    
     setValue(event.target.value);
   }
   const onSearch = (searchTerm) => {
-    console.log("searchTerm", searchTerm)
     // let path = "/search="+searchTerm;
+    setValue('');
     navigate('/search', {state: {searchTerm}});
   }
 
   return (
-    <InputGroup className="">
+    <InputGroup className="" onSubmit={onSearch}>
         <Form.Control
           placeholder="Aradığınız ürünü giriniz"
           aria-label="Recipient's username"
