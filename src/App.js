@@ -9,6 +9,7 @@ import {Product} from './components/Product/Product';
 import {CartContext} from './context/ShoppingCartContext';
 import {useState} from 'react';
 import {ShoppingCart} from './components/ShoppingCart/ShoppingCart';
+import { Search } from './components/Search/Search';
 
 function App() {
   const [cartData, setCartData] = useState({
@@ -76,7 +77,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/fenomen" element={<Fenomen />} />
               <Route path="/cart" element={<ShoppingCart />} />
-              {/* <Route path="/:productID" element={<Product />} /> */}
+              <Route path="/search" element={<Search />} />
               <Route path="/:productID" element={<Product />} />
             </Routes>
           </div>
